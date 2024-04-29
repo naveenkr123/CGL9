@@ -63,21 +63,25 @@ function Home() {
           <h3 className="text-center">HOW TO JOIN?</h3>
           <Row>
             <Col md={6}>
-              <h5 className="mb-2">New to the club?</h5>
-              <p>
-                Simply click on REGISTER, scan the QRCode using your smartphone,
-                and follow the prompts to get your player ID. Enter the player
-                ID in the provided field and spin the wheel to reveal your Free
-                Play bonus.
-              </p>
+              <div className="join-card">
+                <h5 className="mb-2">New to the club?</h5>
+                <p>
+                  Simply click on REGISTER, scan the QRCode using your
+                  smartphone, and follow the prompts to get your player ID.
+                  Enter the player ID in the provided field and spin the wheel
+                  to reveal your Free Play bonus.
+                </p>
+              </div>
             </Col>
             <Col md={6}>
-              <h5 className="mb-2">Already a member?</h5>
-              <p>
-                Just click on LOGIN, scan the QRCode, and enter your player ID.
-                This will update your club information and may even grant you an
-                additional Free Play Wheel spin for more free games.
-              </p>
+              <div className="join-card">
+                <h5 className="mb-2">Already a member?</h5>
+                <p>
+                  Just click on LOGIN, scan the QRCode, and enter your player
+                  ID. This will update your club information and may even grant
+                  you an additional Free Play Wheel spin for more free games.
+                </p>
+              </div>
             </Col>
           </Row>
           {/* <Row className="new_club">
