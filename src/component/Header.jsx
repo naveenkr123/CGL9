@@ -138,12 +138,11 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">How to Join</Nav.Link>
-            <Nav.Link href="#link">FAQ</Nav.Link>
-            <Nav.Link href="#link">About Us</Nav.Link>
-            <Nav.Link href="#link">Contacts</Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link href="#how-to-join">How to Join</Nav.Link>
+            <Nav.Link href="#faq">FAQ</Nav.Link>
+            <Nav.Link href="#about-us">About Us</Nav.Link>
+            <Nav.Link href="#contacts">Contacts</Nav.Link>
+            <Nav.Link href="#login-register">
               <button
                 className="login-btn"
                 onClick={() => setAnotherModalShow(true)}

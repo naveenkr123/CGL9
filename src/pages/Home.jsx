@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <Wrapper>
-      <div className="hero-sec py-5">
+      <div id="home" className="hero-sec py-5">
         <Container>
           <Row>
             <Col lg={6}>
@@ -60,7 +60,7 @@ function Home() {
         </Container>
       </div>
 
-      <div className="join-sec py-5">
+      <div id="how-to-join" className="join-sec py-5">
         <Container>
           <h3 className="text-center">HOW TO JOIN?</h3>
           <Row className="new_club">
@@ -124,7 +124,7 @@ function Home() {
         </Container>
       </div>
 
-      <div className="faq-sec py-5">
+      <div id="faq" className="faq-sec py-5">
         <Container>
           <h3>Frequently Asked Questions</h3>
           <div className="acc_div mx-auto">
@@ -274,7 +274,7 @@ function Home() {
         </Container>
       </div>
 
-      <div className="contact-sec py-5">
+      <div id="contacts" className="contact-sec py-5">
         <Container>
           <Row>
             <Col lg={8} className="mx-auto">
