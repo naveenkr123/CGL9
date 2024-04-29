@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../component/Wrapper";
 import { Col, Container, Row } from "react-bootstrap";
-import qr_code from "../assets/images/QR_Code.png";
+// import qr_code from "../assets/images/QR_Code.png";
 import phones from "../assets/images/av-bg.jpg";
 import android from "../assets/images/play_store.png";
 import ios from "../assets/images/app_store.png";
@@ -61,7 +61,26 @@ function Home() {
       <div id="how-to-join" className="join-sec py-5">
         <Container>
           <h3 className="text-center">HOW TO JOIN?</h3>
-          <Row className="new_club">
+          <Row>
+            <Col md={6}>
+              <h5 className="mb-2">New to the club?</h5>
+              <p>
+                Simply click on REGISTER, scan the QRCode using your smartphone,
+                and follow the prompts to get your player ID. Enter the player
+                ID in the provided field and spin the wheel to reveal your Free
+                Play bonus.
+              </p>
+            </Col>
+            <Col md={6}>
+              <h5 className="mb-2">Already a member?</h5>
+              <p>
+                Just click on LOGIN, scan the QRCode, and enter your player ID.
+                This will update your club information and may even grant you an
+                additional Free Play Wheel spin for more free games.
+              </p>
+            </Col>
+          </Row>
+          {/* <Row className="new_club">
             <Col md={6}>
               <div className="qr_box mx-auto ms-md-auto me-md-5">
                 <img src={qr_code} alt="qr_code" />
@@ -120,7 +139,7 @@ function Home() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </div> */}
         </Container>
       </div>
 
