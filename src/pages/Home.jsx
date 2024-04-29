@@ -1,12 +1,12 @@
 import React from "react";
 import Wrapper from "../component/Wrapper";
-import { Accordion, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import qr_code from "../assets/images/QR_Code.png";
 import phones from "../assets/images/av-bg.jpg";
 import android from "../assets/images/play_store.png";
 import ios from "../assets/images/app_store.png";
 import amazon from "../assets/images/amazon.png";
-import ReviewCard from "../component/ReviewCard";
+// import ReviewCard from "../component/ReviewCard";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -16,9 +16,7 @@ function Home() {
         <Container>
           <Row>
             <Col lg={6}>
-              <h1>
-                Join The <span>CGL9</span>
-              </h1>
+              <h1>Join the club to unlock free gameplay!</h1>
               <p>
                 Upon registration, you will get a chance to spin the Free Play
                 Wheel and enjoy our exciting games.
@@ -31,7 +29,7 @@ function Home() {
         </Container>
       </div>
 
-      <div className="reward-sec py-5">
+      {/* <div className="reward-sec py-5">
         <Container>
           <h3>OUR REWARDS</h3>
           <Row>
@@ -58,7 +56,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
       <div id="how-to-join" className="join-sec py-5">
         <Container>
@@ -71,23 +69,25 @@ function Home() {
             </Col>
             <Col md={6} className="join_steps">
               <h5>New to the club?</h5>
-              <div className="list_item">
-                <div className="list_num">1</div>
-                <p>Simply click on REGISTER</p>
-              </div>
-              <div className="list_item">
-                <div className="list_num">2</div> <p>Scan the QR Code</p>
-              </div>
-              <div className="list_item">
-                <div className="list_num">3</div>
-                <p>Follow the prompts to get your player ID.</p>
-              </div>
-              <div className="list_item">
-                <div className="list_num">4</div>
-                <p>
-                  Enter the player ID in the provided field and spin the wheel
-                  to reveal your Free Play bonus.
-                </p>
+              <div>
+                <div className="list_item">
+                  <div className="list_num">1</div>
+                  <p>Simply click on REGISTER</p>
+                </div>
+                <div className="list_item">
+                  <div className="list_num">2</div> <p>Scan the QR Code</p>
+                </div>
+                <div className="list_item">
+                  <div className="list_num">3</div>
+                  <p>Follow the prompts to get your player ID.</p>
+                </div>
+                <div className="list_item">
+                  <div className="list_num">4</div>
+                  <p>
+                    Enter the player ID in the provided field and spin the wheel
+                    to reveal your Free Play bonus.
+                  </p>
+                </div>
               </div>
             </Col>
           </Row>
@@ -124,7 +124,7 @@ function Home() {
         </Container>
       </div>
 
-      <div id="faq" className="faq-sec py-5">
+      {/* <div id="faq" className="faq-sec py-5">
         <Container>
           <h3>Frequently Asked Questions</h3>
           <div className="acc_div mx-auto">
@@ -210,9 +210,9 @@ function Home() {
             </Accordion>
           </div>
         </Container>
-      </div>
+      </div> */}
 
-      <div className="review-sec py-5">
+      {/* <div className="review-sec py-5">
         <Container>
           <h3>PLAYERS REVIEWS</h3>
           <Row>
@@ -227,7 +227,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
       <div className="available-sec py-5">
         <Container>
