@@ -135,18 +135,20 @@ function Header() {
     <Navbar expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#home">CGL9</Navbar.Brand>
-        <button
-          className="login-btn d-block d-md-none"
-          onClick={() => setAnotherModalShow(true)}
-        >
-          LOGIN
-        </button>
-        <button
-          className="reg-btn d-block d-md-none"
-          onClick={() => setModalShow(true)}
-        >
-          REGISTER
-        </button>
+        <div className="d-flex">
+          <button
+            className="login-btn d-block d-lg-none me-3"
+            onClick={() => setAnotherModalShow(true)}
+          >
+            LOGIN
+          </button>
+          <button
+            className="reg-btn d-block d-lg-none"
+            onClick={() => setModalShow(true)}
+          >
+            REGISTER
+          </button>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -156,7 +158,7 @@ function Header() {
             <Nav.Link href="#contacts">Contacts</Nav.Link>
             <Nav.Link href="#login-register">
               <button
-                className="login-btn d-none d-md-block"
+                className="login-btn d-none d-lg-block"
                 onClick={() => setAnotherModalShow(true)}
               >
                 LOGIN
@@ -164,7 +166,7 @@ function Header() {
             </Nav.Link>
             <Nav.Link href="#login-register" className="ps-0">
               <button
-                className="reg-btn d-none d-md-block"
+                className="reg-btn d-none d-lg-block"
                 onClick={() => setModalShow(true)}
               >
                 REGISTER
