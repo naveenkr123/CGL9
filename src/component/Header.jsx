@@ -134,7 +134,9 @@ function Header() {
   return (
     <Navbar expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">CGL9</Navbar.Brand>
+        <Link className="navbar-brand" to={"/"}>
+          CGL9
+        </Link>
         <div className="d-flex">
           <button
             className="login-btn d-block d-lg-none me-3"
@@ -152,26 +154,29 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+            <Link className="nav-link" to="/player-details">
+              Account
+            </Link>
             <Nav.Link href="#how-to-join">How to Join</Nav.Link>
             <Nav.Link href="#faq">FAQ</Nav.Link>
             <Nav.Link href="#about-us">About Us</Nav.Link>
             <Nav.Link href="#contacts">Contacts</Nav.Link>
-            <Nav.Link href="#login-register">
+            <Link className="nav-link" to="#login-register">
               <button
                 className="login-btn d-none d-lg-block"
                 onClick={() => setAnotherModalShow(true)}
               >
                 LOGIN
               </button>
-            </Nav.Link>
-            <Nav.Link href="#login-register" className="ps-0">
+            </Link>
+            <Link to="#login-register" className="ps-0">
               <button
                 className="reg-btn d-none d-lg-block"
                 onClick={() => setModalShow(true)}
               >
                 REGISTER
               </button>
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
